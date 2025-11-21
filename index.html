@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ali Berhan Palabıyık - Mathematics Student</title>
+    <title>Ali Berhan Palabıyık - Mathematics</title>
 
-    <!-- Basit stil dosyamız -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- MathJax: LaTeX için -->
+    <!-- MathJax: ileride ana sayfada formül yazmak istersen dursun -->
     <script>
     window.MathJax = {
         tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
@@ -18,10 +17,10 @@
 <body>
     <header>
         <h1>Ali Berhan Palabıyık</h1>
-        <p>B.Sc. Mathematics Student at University of Bonn</p>
+        <p>B.Sc. Mathematics student at the University of Bonn</p>
 
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="cv.html">CV</a>
             <a href="notes.html">Notes</a>
             <a href="blog.html">Blog</a>
@@ -30,8 +29,132 @@
     </header>
 
     <main>
-        <h2>Welcome</h2>
-        <p>
-            I am a mathematics student interested in analysis, model theory and algebra
-            On this website I share my notes, LaTeX projects and thoughts about studying maths.
-        </p>
+        <!-- HERO: kısa tanıtım + fotoğraf -->
+        <section class="card">
+            <div class="hero-layout">
+                <div class="hero-text">
+                    <p class="muted">Mathematics · University of Bonn</p>
+                    <h2>Welcome to my personal math page</h2>
+                    <p>
+                        I am an undergraduate mathematics student at the University of Bonn,
+                        currently interested in <strong>mathematical logic</strong> and
+                        <strong>model theory</strong>. On this site I collect selected notes,
+                        small expository texts, and some thoughts on studying mathematics.
+                    </p>
+                    <p class="muted">
+                        (TR) Bu siteyi hem master başvuruları için akademik bir profil olarak
+                        hem de kendi çalışma notlarımı ve yazılarımı düzenli bir yerde toplamak
+                        için kullanıyorum.
+                    </p>
+                </div>
+
+                <!-- Fotoğraf: profile.jpg dosyasını repo'ya yüklersen burada görünür -->
+                <img src="profile.jpg" alt="Portrait of Ali Berhan Palabıyık" class="profile-photo">
+            </div>
+        </section>
+
+        <!-- Şu an ne çalışıyorum? -->
+        <section class="card">
+            <h2>What I am currently working on</h2>
+            <ul>
+                <li>Foundations of analysis and sequences/series of functions</li>
+                <li>Linear algebra, kernels & images, and change of basis</li>
+                <li>First steps into mathematical logic and model theory</li>
+                <li>Improving proof-writing and problem-solving habits</li>
+            </ul>
+        </section>
+
+        <!-- 2 kolon: Notes ve Teaching -->
+        <section class="grid">
+            <div class="card">
+                <h2>Notes & materials</h2>
+                <p>
+                    I keep cleaned-up versions of some of my lecture notes and self-study
+                    summaries here:
+                </p>
+                <ul>
+                    <li><a href="notes.html">Analysis – limits, continuity and series</a></li>
+                    <li><a href="notes.html">Linear Algebra – kernels, images, and rank</a></li>
+                    <li><a href="notes.html">Short LaTeX projects and cheatsheets</a></li>
+                </ul>
+                <p class="muted">
+                    Most notes are written in LaTeX and exported as PDF. Over time, I plan to
+                    add more polished documents and short expository pieces.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Teaching & tutoring</h2>
+                <p>
+                    Alongside my studies I work as a private tutor:
+                </p>
+                <ul>
+                    <li>Online <strong>IB Mathematics</strong> (HL and SL)</li>
+                    <li>University-level <strong>Calculus I–II</strong></li>
+                    <li>Introductory <strong>Differential Equations</strong></li>
+                </ul>
+                <p class="muted">
+                    For tutoring inquiries you can find my contact details on the
+                    <a href="contact.html">Contact</a> page.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2 kolon: Blog & site yapısı -->
+        <section class="grid">
+            <div class="card">
+                <h2>Blog</h2>
+                <p>
+                    From time to time I write informal posts about studying mathematics,
+                    working with problem sheets, and learning to write proofs.
+                </p>
+                <ul>
+                    <li>
+                        <a href="blog.html">Why I enjoy analysis and logic</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Notes on learning to write proofs</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Balancing courses and self-study</a>
+                    </li>
+                </ul>
+                <p class="muted">
+                    Longer posts and expository texts will be listed on the
+                    <a href="blog.html">Blog</a> page once they are ready.
+                </p>
+            </div>
+
+            <div class="card">
+                <h2>Site structure</h2>
+                <ul>
+                    <li>
+                        <strong><a href="cv.html">CV</a></strong> – short academic CV with
+                        education, interests and teaching experience.
+                    </li>
+                    <li>
+                        <strong><a href="notes.html">Notes</a></strong> – selected lecture notes
+                        and LaTeX projects.
+                    </li>
+                    <li>
+                        <strong><a href="blog.html">Blog</a></strong> – informal reflections on
+                        studying mathematics.
+                    </li>
+                    <li>
+                        <strong><a href="contact.html">Contact</a></strong> – email and external
+                        links.
+                    </li>
+                </ul>
+                <p class="muted">
+                    The site is intentionally minimal: no JavaScript frameworks, just static
+                    HTML, CSS and a bit of MathJax for formulas.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ali Berhan Palabıyık</p>
+    </footer>
+</body>
+</html>
