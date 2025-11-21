@@ -27,35 +27,27 @@ header p {
 
 /* NAVIGATION */
 
-nav {
-    margin-top: 1rem;
-}
-
 nav a {
     margin: 0 0.6rem;
     text-decoration: none;
     font-weight: 500;
     padding-bottom: 0.18rem;
-
-    /* Alt çizgi (başlangıçta görünmez) */
     border-bottom: 2px solid transparent;
-    
     color: #1e293b;
     font-size: 0.98rem;
-
     transition: all 0.2s ease;
 }
 
-/* Hover */
 nav a:hover {
     border-bottom-color: #3b82f6;
     color: #0f172a;
+    text-decoration: none;  /* ← BUNU EKLE */
 }
 
-/* Aktif sayfa */
 nav a.active {
     border-bottom-color: #1d4ed8;
     color: #1d4ed8;
+    text-decoration: none;  /* ← İstersen bunu da ekle */
 }
 
 /* Kart görünümü */
