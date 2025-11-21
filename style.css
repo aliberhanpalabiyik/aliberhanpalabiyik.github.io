@@ -27,27 +27,39 @@ header p {
 
 /* NAVIGATION */
 
-nav a {
+nav {
+    margin-top: 1rem;
+}
+
+/* Menü linkleri – underline YOK, sadece border kullanıyoruz */
+nav a,
+nav a:visited {
     margin: 0 0.6rem;
     text-decoration: none;
     font-weight: 500;
     padding-bottom: 0.18rem;
+
     border-bottom: 2px solid transparent;
+
     color: #1e293b;
     font-size: 0.98rem;
+
     transition: all 0.2s ease;
 }
 
-nav a:hover {
+/* Hover */
+nav a:hover,
+nav a:focus {
     border-bottom-color: #3b82f6;
     color: #0f172a;
-    text-decoration: none;  /* ← BUNU EKLE */
+    text-decoration: none;
 }
 
+/* Aktif sayfa */
 nav a.active {
     border-bottom-color: #1d4ed8;
     color: #1d4ed8;
-    text-decoration: none;  /* ← İstersen bunu da ekle */
+    text-decoration: none;
 }
 
 /* Kart görünümü */
@@ -73,18 +85,20 @@ nav a.active {
     }
 }
 
-/* Yazılar */
+/* İçerik linkleri: sadece kartların içindekiler */
+.card a {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Genel muted text */
 .muted {
     color: #64748b;
     font-size: 0.95rem;
-}
-
-a {
-    color: #1d4ed8;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
