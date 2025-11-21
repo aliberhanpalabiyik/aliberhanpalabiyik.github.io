@@ -37,6 +37,17 @@ nav a {
     border-bottom: 2px solid transparent;
     color: #1e293b;
     font-size: 0.98rem;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    border-bottom-color: #3b82f6; /* sadece hoverda mavi */
+    color: #0f172a;
+}
+
+nav a.active {
+    border-bottom-color: #1d4ed8; /* sadece aktif linkte mavi */
+    color: #1d4ed8; /* aktif linkin rengi hafif mavi olsun */
 }
 
 nav a:hover {
