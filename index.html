@@ -1,152 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ali Berhan Palabıyık - Mathematics</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- MathJax: ileride ana sayfada formül yazmak istersen dursun -->
-    <script>
-    window.MathJax = {
-        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
-    };
-    </script>
-    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ali Berhan Palabıyık - Mathematics student at the University of Bonn, interested in mathematical logic and model theory.">
+  <title>Ali Berhan Palabıyık</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
 </head>
 <body>
-    <header>
-        <h1>Ali Berhan Palabıyık</h1>
-        <p>B.Sc. Mathematics student at the University of Bonn</p>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav id="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="notes.html">Notes</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-greeting">Welcome</p>
+          <h1>Ali Berhan Palabıyık</h1>
+          <p class="hero-subtitle">B.Sc. Mathematics · University of Bonn</p>
+          <p class="hero-description">
+            I am an undergraduate mathematics student at the University of Bonn, 
+            currently interested in <strong>mathematical logic</strong> and 
+            <strong>model theory</strong>. On this site I collect selected notes, 
+            small expository texts, and some thoughts on studying mathematics.
+          </p>
+        </div>
+        
+        <div class="hero-image">
+          <img src="profile.jpg" alt="Ali Berhan Palabıyık">
+        </div>
+      </div>
 
-    <main>
-        <!-- HERO: kısa tanıtım + fotoğraf -->
-        <section class="card">
-            <div class="hero-layout">
-                <div class="hero-text">
-                    <p class="muted">Mathematics · University of Bonn</p>
-                    <h2>Welcome to my personal page</h2>
-                    <p>
-                        I am an undergraduate mathematics student at the University of Bonn,
-                        currently interested in <strong>mathematical logic</strong> and
-                        <strong>model theory</strong>. On this site I collect selected notes,
-                        small expository texts, and some thoughts on studying mathematics.
-                    </p>
-                </div>
+      <!-- Current Courses -->
+      <section>
+        <h2>Current Courses</h2>
+        <ul class="courses-list">
+          <li>Analysis 3: Introduction to Measure Theory and Lebesgue Integration</li>
+          <li>Introduction to Abstract Algebra (Groups, Rings, Fields and Galois Theory)</li>
+          <li>Model Theory</li>
+          <li>Seminar on Continuous Logic for Metric Structures</li>
+        </ul>
+      </section>
 
-                <!-- Fotoğraf: profile.jpg dosyasını repo'ya yüklersen burada görünür -->
-                <img src="profile.jpg" alt="Portrait of Ali Berhan Palabıyık" class="profile-photo">
-            </div>
-        </section>
+      <!-- Tutoring -->
+      <section>
+        <h2>Teaching & Tutoring</h2>
+        <p>Alongside my studies I work as a private tutor. For inquiries, visit the <a href="contact.html">Contact</a> page.</p>
+        
+        <div class="tutoring-grid">
+          <div class="tutoring-item">
+            <div class="icon">📐</div>
+            <h4>IB Mathematics</h4>
+            <p>HL and SL · Online</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∫</div>
+            <h4>Calculus I–II</h4>
+            <p>University level</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∂</div>
+            <h4>Differential Equations</h4>
+            <p>Introductory</p>
+          </div>
+        </div>
+      </section>
 
-        <!-- Şu an ne çalışıyorum? -->
-        <section class="card">
-            <h2>I'm currently taking the following classes </h2>
-            <ul>
-                <li>Analysis 3: Introduction to Measure Theory and Lebesque Integration </li>
-                <li>Introduction to Abstract Algebra (Groups, Rings, Fields and Galois Theory)</li>
-                <li>Model Theory</li>
-                <li>Seminar on continious logic for metric structures</li>
-            </ul>
-        </section>
+    </div>
+  </main>
 
-        <!-- 2 kolon: Notes ve Teaching -->
-        <section class="grid">
-            <div class="card">
-                <h2>Notes & materials</h2>
-                <p>
-                   I try to keep weekly lecture notes written in latex, in pdf form. 
-                   I update this page regularly.Also I'll try to add some short articles and little projects
-                </p>
-                <ul>
-                    <li><a href="notes.html">Analysis 3</a></li>
-                    <li><a href="notes.html">Algebra</a></li>
-                    <li><a href="notes.html">Model Theory</a></li>
-                    <li><a href="notes.html">Short LaTeX projects and cheatsheets</a></li>
-                </ul>
-                <p class="muted">
-                    Most notes are written in LaTeX and exported as PDF. Over time, I plan to
-                    add more polished documents and short expository pieces.
-                </p>
-            </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
 
-            <div class="card">
-                <h2>Teaching & tutoring</h2>
-                <p>
-                    Alongside my studies I work as a private tutor:
-                </p>
-                <ul>
-                    <li>Online <strong>IB Mathematics</strong> (HL and SL)</li>
-                    <li>University-level <strong>Calculus I–II</strong></li>
-                    <li>Introductory <strong>Differential Equations</strong></li>
-                </ul>
-                <p class="muted">
-                    For tutoring inquiries you can find my contact details on the
-                    <a href="contact.html">Contact</a> page.
-                </p>
-            </div>
-        </section>
-
-        <!-- 2 kolon: Blog & site yapısı -->
-        <section class="grid">
-            <div class="card">
-                <h2>Blog</h2>
-                <p>
-                    From time to time I write informal posts about studying mathematics,
-                    working with problem sheets, and learning to write proofs.
-                </p>
-                <ul>
-                    <li>
-                        <a href="blog.html">My favourite results from my lectures so far:</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Notes on learning to write proofs</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Balancing courses and self-study</a>
-                    </li>
-                </ul>
-                <p class="muted">
-                    Longer posts and expository texts will be listed on the
-                    <a href="blog.html">Blog</a> page once they are ready.
-                </p>
-            </div>
-
-            <div class="card">
-                <h2>Site structure</h2>
-                <ul>
-                    <li>
-                        <strong><a href="cv.html">CV</a></strong> – short academic CV with
-                        education, interests and teaching experience.
-                    </li>
-                    <li>
-                        <strong><a href="notes.html">Notes</a></strong> – selected lecture notes
-                        and LaTeX projects.
-                    </li>
-                    <li>
-                        <strong><a href="blog.html">Blog</a></strong> – informal reflections on
-                        studying mathematics.
-                    </li>
-                    <li>
-                        <strong><a href="contact.html">Contact</a></strong> – email and external
-                        links.
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Ali Berhan Palabıyık</p>
-    </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
