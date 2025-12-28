@@ -1,120 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CV - Ali Berhan Palabıyık</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV - Ali Berhan Palabıyık, Mathematics student at the University of Bonn">
+  <title>CV · Ali Berhan Palabıyık</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
 </head>
 <body>
-    <header>
-        <h1>Ali Berhan Palabıyık</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="cv.html" class="active">CV</a>
-            <a href="notes.html">Notes</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cv.html" class="active">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- CV Header -->
+      <div class="cv-header">
+        <h1>Curriculum Vitae</h1>
+        <p>Ali Berhan Palabıyık · Mathematics Student</p>
+      </div>
 
-        <!-- Education -->
-        <section class="card">
-    <h2>Education</h2>
-    <ul>
-        <li>
-            <strong>B.Sc. Mathematics, University of Bonn</strong> — 
-            <span class="muted">2024–present</span>
-        </li>
-        <li>
-            <strong>International Baccalaureate (IB), Turkey</strong>  
-            <br>
-            <span class="muted">
-                Higher Level (HL): Mathematics & Physics —  
-                Extended Essay in Mathematics (grade A)
-            </span>
-        </li>
-    </ul>
-</section>
+      <!-- Education -->
+      <div class="cv-section">
+        <h2>Education</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date">2023 – Present</div>
+          <div class="cv-content">
+            <h3>B.Sc. Mathematics</h3>
+            <p class="institution">University of Bonn, Germany</p>
+            <p>Third semester. Coursework includes Analysis, Linear Algebra, 
+               Abstract Algebra, Model Theory, and Measure Theory.</p>
+          </div>
+        </div>
+        
+        <div class="cv-entry">
+          <div class="cv-date">2019 – 2023</div>
+          <div class="cv-content">
+            <h3>High School Diploma</h3>
+            <p class="institution"><!-- Add your high school here --></p>
+          </div>
+        </div>
+      </div>
 
-        <!-- Interests -->
-        <section class="card">
-            <h2>Interests</h2>
+      <!-- Research Interests -->
+      <div class="cv-section">
+        <h2>Research Interests</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date"></div>
+          <div class="cv-content">
+            <p>My current interests lie in mathematical logic, particularly:</p>
             <ul>
-                <li>Mathematical logic and model theory</li>
+              <li>Model Theory</li>
+              <li>Continuous Logic for Metric Structures</li>
+              <li>Connections between logic and other areas of mathematics</li>
             </ul>
+            
+            <div class="tags">
+              <span class="tag">Model Theory</span>
+              <span class="tag">Mathematical Logic</span>
+              <span class="tag">Continuous Logic</span>
+              <span class="tag">Metric Structures</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!-- Teaching Experience -->
+      <div class="cv-section">
+        <h2>Teaching Experience</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date">2023 – Present</div>
+          <div class="cv-content">
+            <h3>Private Tutor</h3>
+            <p class="institution">Online & In-person</p>
             <ul>
-                <li>Teaching and mathematical exposition</li>
+              <li>IB Mathematics (Higher Level and Standard Level)</li>
+              <li>University-level Calculus I and II</li>
+              <li>Introductory Differential Equations</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <!-- Teaching & Work Experience -->
-        <section class="card">
-            <h2>Teaching / Work Experience</h2>
+      <!-- Seminars & Projects -->
+      <div class="cv-section">
+        <h2>Seminars & Projects</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date">Winter 2024/25</div>
+          <div class="cv-content">
+            <h3>Seminar on Continuous Logic for Metric Structures</h3>
+            <p class="institution">University of Bonn</p>
+            <p>Topics: Quantifier elimination, Hilbert spaces in continuous model theory.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills -->
+      <div class="cv-section">
+        <h2>Technical Skills</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date"></div>
+          <div class="cv-content">
+            <div class="tags">
+              <span class="tag">LaTeX</span>
+              <span class="tag">Python</span>
+              <span class="tag">Git</span>
+              <span class="tag">HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Languages -->
+      <div class="cv-section">
+        <h2>Languages</h2>
+        
+        <div class="cv-entry">
+          <div class="cv-date"></div>
+          <div class="cv-content">
             <ul>
-                <li>
-                    <strong>Online IB Mathematics Tutor</strong>  
-                    <br><span class="muted">2024 – present</span>  
-                    Providing HL/SL IB Mathematics lessons, exam preparation, and exercise sessions.
-                </li>
-
-                <li>
-                    <strong>University-level Mathematics Tutor</strong>  
-                    <br><span class="muted">2024 – present</span>  
-                    Private tutoring in Calculus I–II and Differential Equations for undergraduate students.
-                </li>
+              <li><strong>Turkish</strong> – Native</li>
+              <li><strong>English</strong> – Fluent</li>
+              <li><strong>German</strong> – Intermediate/Advanced</li>
             </ul>
-        </section>
+          </div>
+        </div>
+      </div>
 
-        <!-- IT -->
-        <section class="card">
-            <h2>IT &amp; Programming</h2>
-            <ul>
-                <li>LaTeX: Experienced in writing mathematical documents and lecture notes</li>
-                <li>C++: Basic to intermediate programming experience</li>
-                <li>Python: Basic programming experience</li>
-            </ul>
-        </section>
+    </div>
+  </main>
 
-        <!-- Languages -->
-        <section class="card">
-            <h2>Language skills</h2>
-            <ul>
-                <li>Turkish: Native</li>
-                <li>German: C1</li>
-                <li>English: C1</li>
-            </ul>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
 
-        <!-- Voluntary -->
-        <section class="card">
-            <h2>Voluntary Work</h2>
-            <ul>
-                <li>
-                    Volunteer English teaching for middle school students  
-                    <br><span class="muted">2020 – 2021</span>
-                </li>
-                <li>
-                    Volunteer beginner-level piano lessons for children  
-                    <br><span class="muted">2020 – 2021</span>
-                </li>
-            </ul>
-        </section>
-
-        <!-- Other -->
-        <section class="card">
-            <h2>Other Activities</h2>
-            <ul>
-                <li>Piano (ARSM diploma, Royal Academy of Music)</li>
-            </ul>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Ali Berhan Palabıyık</p>
-    </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
