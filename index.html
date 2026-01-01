@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ali Berhan Palabıyık - Mathematics student at the University of Bonn, interested in mathematical logic, model theory and formalized mathematics with Lean.">
+  <title>Ali Berhan Palabıyık</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav id="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-greeting">Welcome</p>
+          <h1>Ali Berhan Palabıyık</h1>
+          <p class="hero-subtitle">B.Sc. Mathematics · University of Bonn</p>
+          <p class="hero-description">
+            I am an undergraduate mathematics student at the University of Bonn, 
+            currently interested in <strong>mathematical logic</strong>, 
+            <strong>model theory</strong> and <strong>formalized mathematics</strong> using Lean Theorem Prover. On this site I collect selected notes, 
+            small expository texts, and some thoughts on studying mathematics.
+          </p>
+        </div>
+        
+        <div class="hero-image">
+          <img src="profile.jpg" alt="Ali Berhan Palabıyık">
+        </div>
+      </div>
+
+      <!-- Current Courses -->
+      <section>
+        <h2>Current Courses</h2>
+        <ul class="courses-list">
+          <li>Analysis 3: Introduction to Measure Theory and Lebesgue Integration</li>
+          <li>Introduction to Abstract Algebra (Groups, Rings, Fields and Galois Theory)</li>
+          <li>Model Theory</li>
+          <li>Seminar on Continuous Logic for Metric Structures</li>
+        </ul>
+      </section>
+
+      <!-- Tutoring -->
+      <section>
+        <h2>Teaching & Tutoring</h2>
+        <p>Alongside my studies I work as a private tutor. For inquiries, visit the <a href="contact.html">Contact</a> page.</p>
+        
+        <div class="tutoring-grid">
+          <div class="tutoring-item">
+            <div class="icon">📐</div>
+            <h4>IB Mathematics</h4>
+            <p>HL and SL · Online</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∫</div>
+            <h4>Calculus I–II</h4>
+            <p>University level</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∂</div>
+            <h4>Differential Equations</h4>
+            <p>University level</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog - Thoughts on mathematics and studying by Ali Berhan Palabıyık">
+  <title>Blog · Ali Berhan Palabıyık</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container">
+      
+      <!-- Page Header -->
+      <div class="blog-intro">
+        <h1>Blog</h1>
+        <p>
+          From time to time I write informal posts about studying mathematics, 
+          working through problem sheets, learning to write proofs, and other 
+          reflections on the mathematical journey.
+        </p>
+      </div>
+
+      <!-- Categories -->
+      <div class="blog-categories">
+        <button class="category-btn active">All</button>
+        <button class="category-btn">Mathematics</button>
+        <button class="category-btn">Study Tips</button>
+        <button class="category-btn">Proofs</button>
+        <button class="category-btn">University Life</button>
+        <button class="category-btn">Books & Resources</button>
+      </div>
+
+      <!-- Mathematics Section -->
+      <div class="blog-section">
+        <h2>Mathematics</h2>
+        <p class="section-desc">
+          Posts about mathematical ideas, favorite theorems, and interesting problems.
+        </p>
+        
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">∞</div>
+            <h3>Coming Soon</h3>
+            <p>Posts about mathematical topics will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Study Tips Section -->
+      <div class="blog-section">
+        <h2>Study Tips</h2>
+        <p class="section-desc">
+          Thoughts on effective learning strategies and managing coursework.
+        </p>
+        
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">📚</div>
+            <h3>Coming Soon</h3>
+            <p>Study tips and advice will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proofs Section -->
+      <div class="blog-section">
+        <h2>Proofs</h2>
+        <p class="section-desc">
+          Reflections on learning to write and understand mathematical proofs.
+        </p>
+        
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">∴</div>
+            <h3>Coming Soon</h3>
+            <p>Posts about proof writing will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- University Life Section -->
+      <div class="blog-section">
+        <h2>University Life</h2>
+        <p class="section-desc">
+          Experiences and reflections on studying at the University of Bonn.
+        </p>
+        
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">🎓</div>
+            <h3>Coming Soon</h3>
+            <p>Posts about university life will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books & Resources Section -->
+      <div class="blog-section">
+        <h2>Books & Resources</h2>
+        <p class="section-desc">
+          Reviews and recommendations of textbooks, lecture notes, and other resources.
+        </p>
+        
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">📖</div>
+            <h3>Coming Soon</h3>
+            <p>Book reviews and resource recommendations will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById('nav-menu').classList.toggle('active');
+    }
+    
+    // Category filter functionality (for future use)
+    document.querySelectorAll('.category-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
