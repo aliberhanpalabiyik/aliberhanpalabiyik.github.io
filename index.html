@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ali Berhan Palabıyık - Mathematics student at the University of Bonn, interested in mathematical logic, model theory and formalized mathematics with Lean.">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Ali Berhan Palabıyık – Mathematics Student">
+  <meta property="og:description" content="B.Sc. Mathematics at the University of Bonn. Notes, blog, and tutoring in IB & university mathematics.">
+  <meta property="og:url" content="https://aliberhanpalabiyik.github.io/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ali Berhan Palabıyık – Mathematics Student">
+  <meta name="twitter:description" content="B.Sc. Mathematics at the University of Bonn. Notes, blog, and tutoring.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aliberhanpalabiyik.github.io/">
+
+  <title>Ali Berhan Palabıyık</title>
+
+  <!-- Google Fonts — preconnect first to avoid render blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ali Berhan Palabıyık",
+    "url": "https://aliberhanpalabiyik.github.io",
+    "jobTitle": "Mathematics Student",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Bonn"
+    },
+    "knowsAbout": ["Mathematical Logic", "Model Theory", "Formalized Mathematics", "Lean Theorem Prover"],
+    "email": "berhanpalabiyik@gmail.com"
+  }
+  </script>
+</head>
+<body>
+  <!-- Skip Link (keyboard / screen-reader navigation) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+
+      <button
+        class="mobile-menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-greeting">Welcome</p>
+          <h1>Ali Berhan Palabıyık</h1>
+          <p class="hero-subtitle">B.Sc. Mathematics · University of Bonn</p>
+          <p class="hero-description">
+            I am an undergraduate mathematics student at the University of Bonn,
+            currently interested in <strong>mathematical logic</strong>,
+            <strong>model theory</strong> and <strong>formalized mathematics</strong> using Lean Theorem Prover. On this site I collect selected notes,
+            small expository texts, and some thoughts on studying mathematics.
+          </p>
+        </div>
+
+        <div class="hero-image">
+          <img
+            src="profile.jpg"
+            alt="Ali Berhan Palabıyık"
+            width="200"
+            height="200"
+            loading="lazy">
+        </div>
+      </div>
+
+      <!-- Current Courses -->
+      <section>
+        <h2>Current Courses</h2>
+        <ul class="courses-list">
+          <li>Algebra I</li>
+          <li>Number Theory</li>
+          <li>Topology / Geometry</li>
+          <li>Advanced Mathematical Logic</li>
+          <li>Complex Analysis</li>
+        </ul>
+      </section>
+
+      <!-- Tutoring -->
+      <section>
+        <h2>Teaching & Tutoring</h2>
+        <p>Alongside my studies I work as a private tutor. For inquiries, visit the <a href="contact.html">Contact</a> page.</p>
+
+        <div class="tutoring-grid">
+          <div class="tutoring-item">
+            <div class="icon">📐</div>
+            <h4>IB Mathematics</h4>
+            <p>HL and SL · Online</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∫</div>
+            <h4>Calculus I–II</h4>
+            <p>University level</p>
+          </div>
+          <div class="tutoring-item">
+            <div class="icon">∂</div>
+            <h4>Differential Equations</h4>
+            <p>University level</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Dynamic copyright year ── */
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ── Accessible mobile menu ── */
+    function toggleMenu(btn) {
+      const nav = document.getElementById('nav-menu');
+      const isOpen = nav.classList.toggle('active');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen) {
+        nav.querySelector('a').focus();
+      }
+    }
+
+    /* Close on Escape */
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const nav = document.getElementById('nav-menu');
+        const btn = document.querySelector('.mobile-menu-toggle');
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.focus();
+        }
+      }
+    });
+
+    /* Close on outside click */
+    document.addEventListener('click', function (e) {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.mobile-menu-toggle');
+      if (
+        nav.classList.contains('active') &&
+        !nav.contains(e.target) &&
+        !btn.contains(e.target)
+      ) {
+        nav.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>

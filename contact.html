@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact - Get in touch with Ali Berhan Palabıyık">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Contact · Ali Berhan Palabıyık">
+  <meta property="og:description" content="Get in touch with Ali Berhan Palabıyık — tutoring inquiries, questions about notes, or just discussing mathematics.">
+  <meta property="og:url" content="https://aliberhanpalabiyik.github.io/contact.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact · Ali Berhan Palabıyık">
+  <meta name="twitter:description" content="Get in touch — tutoring inquiries or questions about mathematics.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aliberhanpalabiyik.github.io/contact.html">
+
+  <title>Contact · Ali Berhan Palabıyık</title>
+
+  <!-- Google Fonts — preconnect first to avoid render blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+
+      <button
+        class="mobile-menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+
+      <div class="contact-content">
+        <h1>Contact</h1>
+        <p>
+          Feel free to reach out if you have questions about my notes,
+          are interested in tutoring, or just want to discuss mathematics.
+        </p>
+
+        <!-- Contact Methods -->
+        <div class="contact-methods">
+
+          <!-- Email -->
+          <div class="contact-item">
+            <div class="icon">✉️</div>
+            <div class="info">
+              <h4>Email</h4>
+              <a href="mailto:berhanpalabiyik@gmail.com">berhanpalabiyik@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- LinkedIn -->
+          <div class="contact-item">
+            <div class="icon">💼</div>
+            <div class="info">
+              <h4>LinkedIn</h4>
+              <a href="https://www.linkedin.com/in/ali-berhan-palab%C4%B1y%C4%B1k-753866329/" target="_blank" rel="noopener noreferrer">
+                Ali Berhan Palabıyık
+              </a>
+            </div>
+          </div>
+
+          <!-- GitHub -->
+          <div class="contact-item">
+            <div class="icon">💻</div>
+            <div class="info">
+              <h4>GitHub</h4>
+              <a href="https://github.com/aliberhanpalabiyik" target="_blank" rel="noopener noreferrer">
+                github.com/aliberhanpalabiyik
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tutoring Note -->
+        <div class="info-box">
+          <h3>📐 Tutoring Inquiries</h3>
+          <p>
+            For tutoring in IB or University Mathematics,
+            please reach out via email with your current level and topics you'd like to cover.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleMenu(btn) {
+      const nav = document.getElementById('nav-menu');
+      const isOpen = nav.classList.toggle('active');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen) nav.querySelector('a').focus();
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const nav = document.getElementById('nav-menu');
+        const btn = document.querySelector('.mobile-menu-toggle');
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.focus();
+        }
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.mobile-menu-toggle');
+      if (
+        nav.classList.contains('active') &&
+        !nav.contains(e.target) &&
+        !btn.contains(e.target)
+      ) {
+        nav.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>

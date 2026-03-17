@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog - Thoughts on mathematics and studying by Ali Berhan Palabıyık">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Blog · Ali Berhan Palabıyık">
+  <meta property="og:description" content="Informal posts about studying mathematics, writing proofs, and the mathematical journey.">
+  <meta property="og:url" content="https://aliberhanpalabiyik.github.io/blog.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Blog · Ali Berhan Palabıyık">
+  <meta name="twitter:description" content="Informal posts about studying mathematics, writing proofs, and the mathematical journey.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aliberhanpalabiyik.github.io/blog.html">
+
+  <title>Blog · Ali Berhan Palabıyık</title>
+
+  <!-- Google Fonts — preconnect first to avoid render blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+
+      <button
+        class="mobile-menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html">Notes</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="blog-intro">
+        <h1>Blog</h1>
+        <p>
+          From time to time I write informal posts about studying mathematics,
+          working through problem sheets, learning to write proofs, and other
+          reflections on the mathematical journey.
+        </p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="blog-categories" role="group" aria-label="Filter posts by category">
+        <button class="category-btn active" data-filter="All">All</button>
+        <button class="category-btn" data-filter="Mathematics">Mathematics</button>
+        <button class="category-btn" data-filter="Study Tips">Study Tips</button>
+        <button class="category-btn" data-filter="Proofs">Proofs</button>
+        <button class="category-btn" data-filter="University Life">University Life</button>
+        <button class="category-btn" data-filter="Books &amp; Resources">Books &amp; Resources</button>
+      </div>
+
+      <!-- Mathematics Section -->
+      <div class="blog-section" data-category="Mathematics">
+        <h2>Mathematics</h2>
+        <p class="section-desc">
+          Posts about mathematical ideas, favourite theorems, and interesting problems.
+        </p>
+
+        <div class="blog-grid">
+          <a href="primitive-element-theorem.pdf" class="blog-card" target="_blank" rel="noopener noreferrer">
+            <span class="category">Algebra</span>
+            <h3>Primitive Element Theorem</h3>
+            <p>
+              A proof of one of my favourite theorems in field theory, along with some example calculations.
+            </p>
+            <div class="meta">January 8, 2026 · PDF</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Study Tips Section -->
+      <div class="blog-section" data-category="Study Tips">
+        <h2>Study Tips</h2>
+        <p class="section-desc">
+          Thoughts on effective learning strategies and managing coursework.
+        </p>
+
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">📚</div>
+            <h3>Coming Soon</h3>
+            <p>Study tips and advice will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proofs Section -->
+      <div class="blog-section" data-category="Proofs">
+        <h2>Proofs</h2>
+        <p class="section-desc">
+          Reflections on learning to write and understand mathematical proofs.
+        </p>
+
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">∴</div>
+            <h3>Coming Soon</h3>
+            <p>Posts about proof writing will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- University Life Section -->
+      <div class="blog-section" data-category="University Life">
+        <h2>University Life</h2>
+        <p class="section-desc">
+          Experiences and reflections on studying at the University of Bonn.
+        </p>
+
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">🎓</div>
+            <h3>Coming Soon</h3>
+            <p>Posts about university life will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Books & Resources Section -->
+      <div class="blog-section" data-category="Books &amp; Resources">
+        <h2>Books &amp; Resources</h2>
+        <p class="section-desc">
+          Reviews and recommendations of textbooks, lecture notes, and other resources.
+        </p>
+
+        <div class="blog-grid">
+          <div class="empty-state">
+            <div class="icon">📖</div>
+            <h3>Coming Soon</h3>
+            <p>Book reviews and resource recommendations will appear here.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    /* ── Mobile menu ── */
+    function toggleMenu(btn) {
+      const nav = document.getElementById('nav-menu');
+      const isOpen = nav.classList.toggle('active');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen) nav.querySelector('a').focus();
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const nav = document.getElementById('nav-menu');
+        const btn = document.querySelector('.mobile-menu-toggle');
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.focus();
+        }
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.mobile-menu-toggle');
+      if (
+        nav.classList.contains('active') &&
+        !nav.contains(e.target) &&
+        !btn.contains(e.target)
+      ) {
+        nav.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    /* ── Working category filter ── */
+    const filterBtns = document.querySelectorAll('.category-btn');
+    const blogSections = document.querySelectorAll('.blog-section');
+
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        const selected = this.dataset.filter;
+
+        /* Update active button */
+        filterBtns.forEach(function (b) { b.classList.remove('active'); });
+        this.classList.add('active');
+
+        /* Show / hide sections */
+        blogSections.forEach(function (section) {
+          if (selected === 'All' || section.dataset.category === selected) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

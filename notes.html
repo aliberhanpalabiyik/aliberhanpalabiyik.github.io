@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notes - Lecture notes, problem sets, and LaTeX projects by Ali Berhan Palabıyık">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Notes · Ali Berhan Palabıyık">
+  <meta property="og:description" content="Lecture notes, problem solutions, and LaTeX projects by Ali Berhan Palabıyık.">
+  <meta property="og:url" content="https://aliberhanpalabiyik.github.io/notes.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Notes · Ali Berhan Palabıyık">
+  <meta name="twitter:description" content="Lecture notes, problem solutions, and LaTeX projects by Ali Berhan Palabıyık.">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://aliberhanpalabiyik.github.io/notes.html">
+
+  <title>Notes · Ali Berhan Palabıyık</title>
+
+  <!-- Google Fonts — preconnect first to avoid render blocking -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∑</text></svg>">
+</head>
+<body>
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">A<span>.</span>B<span>.</span> Palabıyık</a>
+
+      <button
+        class="mobile-menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        onclick="toggleMenu(this)">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="cv.html">CV</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <div class="container">
+
+      <!-- Page Header -->
+      <div class="notes-intro">
+        <h1>Notes & Materials</h1>
+        <p>
+          Here I collect lecture notes, problem solutions, and small LaTeX projects.
+          Most documents are written in LaTeX and exported as PDF. I update this page
+          regularly as I progress through my courses.
+        </p>
+      </div>
+
+      <!-- Lecture Notes Section -->
+      <div class="notes-section">
+        <h2>Lecture Notes</h2>
+        <p class="section-desc">
+          Weekly notes from my current and past courses. These are personal study notes
+          and may contain errors.
+        </p>
+
+        <div class="notes-grid">
+          <div class="empty-state">
+            <div class="icon">📝</div>
+            <h3>Coming Soon</h3>
+            <p>Lecture notes will be added here as the semester progresses.</p>
+          </div>
+
+          <!-- Example: uncomment and edit to add a note
+          <a href="notes/model-theory-week1.pdf" class="note-card">
+            <div class="note-icon">📄</div>
+            <div class="note-info">
+              <h3>Model Theory - Week 1</h3>
+              <p>Languages, structures, and first-order formulas</p>
+            </div>
+            <div class="note-meta">
+              <div class="type">PDF</div>
+              <div class="date">Oct 2024</div>
+            </div>
+          </a>
+          -->
+        </div>
+      </div>
+
+      <!-- Problem Solving Section -->
+      <div class="notes-section">
+        <h2>Problem Solving</h2>
+        <p class="section-desc">
+          Selected solutions and write-ups from problem sheets and exercises.
+        </p>
+
+        <div class="notes-grid">
+          <div class="empty-state">
+            <div class="icon">✏️</div>
+            <h3>Coming Soon</h3>
+            <p>Problem solutions will be added here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LaTeX Projects Section -->
+      <div class="notes-section">
+        <h2>LaTeX Projects</h2>
+        <p class="section-desc">
+          Short expository texts, cheatsheets, and other LaTeX documents.
+        </p>
+
+        <div class="notes-grid">
+          <div class="empty-state">
+            <div class="icon">📐</div>
+            <h3>Coming Soon</h3>
+            <p>LaTeX projects and cheatsheets will be added here.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Future Projects Section -->
+      <div class="notes-section">
+        <h2>Future Projects</h2>
+        <p class="section-desc">
+          Space for upcoming projects and explorations.
+        </p>
+
+        <div class="notes-grid">
+          <div class="empty-state">
+            <div class="icon">🚀</div>
+            <h3>Ideas in Progress</h3>
+            <p>Future projects will appear here as they develop.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Ali Berhan Palabıyık</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function toggleMenu(btn) {
+      const nav = document.getElementById('nav-menu');
+      const isOpen = nav.classList.toggle('active');
+      btn.setAttribute('aria-expanded', String(isOpen));
+      if (isOpen) nav.querySelector('a').focus();
+    }
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        const nav = document.getElementById('nav-menu');
+        const btn = document.querySelector('.mobile-menu-toggle');
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.focus();
+        }
+      }
+    });
+
+    document.addEventListener('click', function (e) {
+      const nav = document.getElementById('nav-menu');
+      const btn = document.querySelector('.mobile-menu-toggle');
+      if (
+        nav.classList.contains('active') &&
+        !nav.contains(e.target) &&
+        !btn.contains(e.target)
+      ) {
+        nav.classList.remove('active');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  </script>
+</body>
+</html>
