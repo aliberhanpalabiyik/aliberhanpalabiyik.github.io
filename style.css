@@ -1111,12 +1111,7 @@ button:focus-visible {
 
 /* Smooth image loading */
 img {
-  opacity: 1;
   transition: opacity var(--transition-base);
-}
-
-img[loading] {
-  opacity: 0;
 }
 
 /* ============================================
