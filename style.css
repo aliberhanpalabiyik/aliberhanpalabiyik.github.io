@@ -807,8 +807,8 @@ section:last-child {
 
 .contact-content {
   max-width: 650px;
+  margin: 0 auto;
 }
-
 .contact-content > p {
   font-size: 1.1rem;
   margin-bottom: var(--space-2xl);
